@@ -1,5 +1,3 @@
-
-
 function LuasSegitiga() {
   var a = document.getElementById("alas").value;
   var t = document.getElementById("tinggi").value;
@@ -9,6 +7,9 @@ function LuasSegitiga() {
   }
   var hasil = 0.5 * a * t;
   document.getElementById("hasil").innerHTML = "Hasil: luas segitiga adalah " + hasil + "cm" + '<sup>2</sup>';
-  console.log(hasil);
-  console.log("Test");
+}
+
+function ResetForm(){
+  document.getElementById("input-form").reset();
+  document.getElementById("hasil").innerHTML = "Hasil:";
 }

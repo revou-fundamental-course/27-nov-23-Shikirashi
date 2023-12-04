@@ -5,18 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kalkulator Segitiga</title>
     <link rel="stylesheet" href="css/styles.css" />
-    
+    <script src="js/script.js"></script>
   </head>
-  <body id="body">
+  <body>
     <h2 id="title-text">Luas Segitiga</h2>
+    <!-- <picture class="rumus-img">
+      <source srcset="img/rumusluassegitiga" media="(prefers-colors-scheme: light)"/>
+      <source srcset="img/rumusluassegitiga-dark" media="(prefers-colors-scheme: dark)"/>
+    </picture> -->
     <div class="rumus-img">
-      <img src="img/rumusluassegitiga.png" alt="rumus luas segitiga" />
+      <img class="color-invertible" src="img/rumusluassegitiga.png" alt="rumus luas segitiga" />
     </div>
     <p>Rumus luas segitiga yaitu:</p>
     <p class="teks-rumus">L = 1/2 x a x t</p>
     <p>Di mana: <br />L = Luas<br />a = Alas<br />t = Tinggi</p>
     <section>
-        <form>
+        <form id="input-form">
             <ul class="input-section">
                 <li class="form-row">
                   <label for="alas">Alas:</label>
@@ -27,14 +31,14 @@
                   <input type="number" id="tinggi">
                 </li>
                 <li class="form-row">
-                  <p id="hasil"></label>
+                  <p id="hasil">Hasil:</label>
                 </li>
-                <li class="form-row">
-                  <button type="button" class="btn" onclick="LuasSegitiga();">Hitung</button>
+                <li class="button-row">
+                  <button class="hitung" type="button" onclick="LuasSegitiga();">Hitung</button>
+                  <button class="reset-btn" type="button" onclick="ResetForm();">Reset</button>
                 </li>
               </ul>
         </form>
     </section>
-    <script src="js/script.js"></script>
   </body>
 </html>
