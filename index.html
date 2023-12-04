@@ -8,37 +8,25 @@
     <script src="js/script.js"></script>
   </head>
   <body>
-    <h2 id="title-text">Luas Segitiga</h2>
-    <!-- <picture class="rumus-img">
-      <source srcset="img/rumusluassegitiga" media="(prefers-colors-scheme: light)"/>
-      <source srcset="img/rumusluassegitiga-dark" media="(prefers-colors-scheme: dark)"/>
-    </picture> -->
-    <div class="rumus-img">
-      <img class="color-invertible" src="img/rumusluassegitiga.png" alt="rumus luas segitiga" />
-    </div>
-    <p>Rumus luas segitiga yaitu:</p>
-    <p class="teks-rumus">L = 1/2 x a x t</p>
-    <p>Di mana: <br />L = Luas<br />a = Alas<br />t = Tinggi</p>
-    <section>
-        <form id="input-form">
-            <ul class="input-section">
-                <li class="form-row">
-                  <label for="alas">Alas:</label>
-                  <input type="number" id="alas">
-                </li>
-                <li class="form-row">
-                  <label for="tinggi">Tinggi:</label>
-                  <input type="number" id="tinggi">
-                </li>
-                <li class="form-row">
-                  <p id="hasil">Hasil:</label>
-                </li>
-                <li class="button-row">
-                  <button class="hitung" type="button" onclick="LuasSegitiga();">Hitung</button>
-                  <button class="reset-btn" type="button" onclick="ResetForm();">Reset</button>
-                </li>
-              </ul>
+    <div class="main-container">
+      <h2 id="title-text">Luas Segitiga</h2>
+      <div class="rumus-img">
+        <img class="color-invertible" src="img/rumusluassegitiga.png" alt="rumus luas segitiga" />
+      </div>
+      <p>Rumus luas segitiga yaitu:</p>
+      <p class="teks-rumus">L = 1/2 x a x t</p>
+      <p>Di mana: <br />L = Luas<br />a = Alas<br />t = Tinggi</p>
+      <section class="input-section">
+        <form  id="input-form">
+          <label for="alas">Alas</label>
+          <input type="number" id="alas">
+          <label for="tinggi">Tinggi</label>
+          <input type="number" id="tinggi">
+          <p id="hasil">Hasil:</p>
+          <button class="reset-btn" type="button" onclick="ResetForm();">Reset</button>
+          <button class="hitung" type="button" onclick="LuasSegitiga();">Hitung</button>
         </form>
-    </section>
+      </section>
+    </div>
   </body>
 </html>
