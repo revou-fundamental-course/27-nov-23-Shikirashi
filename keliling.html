@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Segitiga</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <h2 id="title-text">Keliling Segitiga</h2>
+      <div class="rumus-img">
+        <img id="color-invertible" class="color-invertible" src="img/rumuskelilingsegitiga.png" alt="rumus luas segitiga" />
+      </div>
+      <p>Rumus keliling segitiga yaitu:</p>
+      <p class="teks-rumus">K = a + b + c</p>
+      <p>Di mana: <br>K = Keliling<br />a = sisi a<br>b = sisi b <br>c = sisi c</p>
+      <section class="input-section">
+        <form  id="input-form">
+          <label for="sisi-a">a</label>
+          <input type="number" id="sisi-a">
+          <label for="sisi-b">b</label>
+          <input type="number" id="sisi-b">
+          <label for="sisi-c">c</label>
+          <input type="number" id="sisi-c">
+          <p id="hasil">Hasil:</p>
+          <button class="reset-btn" type="button" onclick="ResetForm();">Reset</button>
+          <button class="hitung" type="button" onclick="KelilingSegitiga();">Hitung</button>
+          <button class="change-page" type="button" onclick="location.href='index.html';">Hitung</button>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
